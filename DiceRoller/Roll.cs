@@ -4,6 +4,7 @@ namespace DiceRoller
 {
     public class Roll
     {
+        // Method for simulating the rolls
         public void SimulateRolls(int rollNum)
         {
             Random ran = new Random();
@@ -24,7 +25,7 @@ namespace DiceRoller
             Console.WriteLine("Each \"*\" represents 1% of the total number of rolls.");
             Console.WriteLine("Total number of rolls = {0}.", rollNum);
             Console.WriteLine();
-
+            // Calculates the percentage of each result
             double singleResult;
             double percent;
             for (int i = 0; i < results.Length; i++)
